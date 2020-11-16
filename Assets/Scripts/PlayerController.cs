@@ -51,9 +51,13 @@ public class PlayerController : MonoBehaviour
             float direction = Input.GetAxisRaw("Horizontal");
             animator.SetFloat("running", Mathf.Abs(direction));
             rb.velocity = new Vector2(direction * speed * Time.fixedDeltaTime, rb.velocity.y);
-            if (direction != 0)
+            if (direction > 0)
             {
-                transform.localScale = new Vector3(direction, 1, 1);
+                transform.localScale = new Vector3(1, 1, 1);
+            }
+            else if (direction < 0)
+            {
+                transform.localScale = new Vector3(-1, 1, 1);
             }
         }
     }

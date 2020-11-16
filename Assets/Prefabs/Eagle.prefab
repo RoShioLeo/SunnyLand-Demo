@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 6580365683258433744}
   m_Layer: 0
   m_Name: Eagle
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -198,7 +198,8 @@ AudioSource:
   m_GameObject: {fileID: 7457757148207937387}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 342156faad8550a41afa6c0d02677df3,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 2adb857f469be6542b88433c6cb895b6, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
